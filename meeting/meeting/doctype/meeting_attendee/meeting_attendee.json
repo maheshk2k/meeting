@@ -1,0 +1,53 @@
+{
+ "creation": "2020-08-10 22:23:25.349842",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "attendee",
+  "full_name",
+  "accepted",
+  "attended"
+ ],
+ "fields": [
+  {
+   "fieldname": "attendee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Attendee",
+   "options": "User"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Attendee Full Name",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "accepted",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Invitation Accepted?"
+  },
+  {
+   "default": "0",
+   "fieldname": "attended",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Attended?"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-08-11 13:08:04.406451",
+ "modified_by": "Administrator",
+ "module": "Meeting",
+ "name": "Meeting Attendee",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
